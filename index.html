@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer type="module" src="/main.js"></script>
+    <title>Validation Form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="submit-form">
+        <form id="form" class="submit-form__items-block items-block">
+          <div class="items-block__item item">
+            <h2>Client Details</h2>
+            <div class="item_one-line">
+              <div>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="First name"
+                /><br />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  placeholder="Last name"
+                /><br />
+              </div>
+            </div>
+            <div>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone"
+              /><br />
+            </div>
+            <div>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email (optional)"
+              /><br /><br />
+            </div>
+          </div>
+          <div class="items-block__item item">
+            <h2>Job Details</h2>
+            <div class="item_one-line">
+              <div>
+                <!-- <label for="fruits">Choose a fruit:</label> -->
+                <input
+                  type="text"
+                  id="jtype"
+                  name="jtype"
+                  list="jtype-list"
+                  placeholder="Job type"
+                />
+                <datalist id="jtype-list">
+                  <option value="repair of electrical equipment"></option>
+                  <option value="car repair"></option>
+                  <option
+                    value="scheduled maintenance of the heating system"
+                  ></option>
+                  <option value="cleaning"></option>
+                  <option value="window installation"></option>
+                </datalist>
+              </div>
+              <div>
+                <!-- <label for="fruits">Choose a fruit:</label> -->
+                <input
+                  type="text"
+                  id="jsource"
+                  name="jsource"
+                  list="jsource-list"
+                  placeholder="Job source"
+                />
+                <datalist id="jsource-list">
+                  <option value="GL Tampa"></option>
+                  <option value="GL Miami"></option>
+                  <option value="GL Orlando"></option>
+                  <option value="GL Houston"></option>
+                  <option value="GL Charlotte"></option>
+                  <option value="GL Austin"></option>
+                </datalist>
+              </div>
+            </div>
+            <div>
+              <textarea
+                id="jdescription"
+                name="jdescription"
+                placeholder="Job description (optional)"
+              ></textarea>
+            </div>
+          </div>
+          <div class="items-block__item item">
+            <h2>Service location</h2>
+            <div>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Address"
+              /><br />
+            </div>
+            <div>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="City"
+              /><br />
+            </div>
+            <div>
+              <input
+                type="text"
+                id="state"
+                name="state"
+                placeholder="State"
+              /><br />
+            </div>
+            <div class="item_one-line">
+              <div>
+                <input
+                  type="text"
+                  id="zcode"
+                  name="zcode"
+                  placeholder="Zip code"
+                /><br />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  id="area"
+                  name="area"
+                  list="area-list"
+                  placeholder="Area"
+                />
+                <datalist id="area-list">
+                  <option value="Tampa"></option>
+                  <option value="Miami"></option>
+                  <option value="Orlando"></option>
+                  <option value="Houston"></option>
+                  <option value="Charlotte"></option>
+                  <option value="Austin"></option>
+                </datalist>
+              </div>
+            </div>
+          </div>
+          <div class="items-block__item item">
+            <h2>Scheduled</h2>
+            <div>
+              <input class="visible" type="date" id="date" name="date" />
+            </div>
+            <div class="item_one-line">
+              <div>
+                <input class="visible" type="time" id="stime" name="stime" />
+              </div>
+              <div>
+                <input class="visible" type="time" id="etime" name="etime" />
+              </div>
+            </div>
+            <div>
+              <input
+                type="text"
+                id="tselect"
+                name="tselect"
+                list="tselect-list"
+                placeholder="Test select"
+              />
+              <datalist id="tselect-list">
+                <option value="Test 1"></option>
+                <option value="Test 2"></option>
+                <option value="Test 3"></option>
+                <option value="Test 4"></option>
+                <option value="Test 5"></option>
+              </datalist>
+            </div>
+          </div>
+          <input
+            class="items-block__submit"
+            id="submit"
+            type="submit"
+            value="Create Deal"
+          />
+        </form>
+        <p class="status hide"></p>
+      </div>
+  
+    </div>
+  </body>
+</html>
